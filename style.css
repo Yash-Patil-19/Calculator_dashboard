@@ -1,0 +1,83 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* { /* For global Styles*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body { /* For Body Styles*/
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3c68f;
+}
+.container { /*Display Screen Styles Defines the calculator container */
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: #824904;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display { /*Display Screen Styles */
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #031b30;
+  border: 1px solid #000000;
+  border-radius: 5px; 
+  pointer-events: none;
+  background:  #ffeed7;
+}
+.buttons { /*Arranges calculator buttons in a 4-column grid */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button { /*Button Styles */
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #e5d5be;
+}
+.buttons button:active { 
+  transform: scale(0.99);
+}
+.operator {
+  color: #2f9fff;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header { /*Header Styles*/
+  color: rgb(1, 0, 0);
+  padding: 50px 10px;
+  position: absolute;
+  top: -5px; 
+  left: 30px;
+  font-size: 12px; 
+}
+main {
+  padding: 10px;
+  text-align: left;
+}
+footer { /*Footer Styles*/
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
